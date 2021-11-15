@@ -1,8 +1,0 @@
-import AppBar from '@mui/material/AppBar';
-import ToolBar from '@mui/material/ToolBar';
-
-function Header() {
-    return (
-	    <AppBar position="static" color="Blue" elevation={0}>
-	    
-	    </AppBar>
