@@ -1,7 +1,11 @@
 # full-stack-arxiv-
 full stack web app written in ReactJS and Django
+
+## License
+MIT
            
+## architecture
+![architecture](docs/architecture.jpg)
 
-
-## todo
-- [x] I need to figure out why the code in `App.js` is not being rendered.
+## example 
+![workflow](docs/arxiv-1.jpg)
