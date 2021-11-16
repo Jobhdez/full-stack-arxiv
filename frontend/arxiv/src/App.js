@@ -16,7 +16,8 @@ function App() {
     console.log(jsonData);
     setApiData(jsonData);
   };
-
+  console.log(apiData);
+  console.log(apiData[0])
   return (
     <div className="App">
       <h1>Latest Papers</h1>
