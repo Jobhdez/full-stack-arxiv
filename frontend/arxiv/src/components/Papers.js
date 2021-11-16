@@ -6,7 +6,7 @@ const Papers = (props) => {
     if (!papers || papers.length === 0) return <p>Cannot find any papers, sorry</p>;
     return (
         <React.Fragment>
-            {papers.map((paper) => {
+            {Object.values(papers).map((paper) => {
                 return (
                     <Grid item key={paper.title} xs={12} md={4}>
                         <h2>{paper.title}</h2>
