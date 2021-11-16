@@ -1,11 +1,11 @@
-# full-stack-arxiv-
+# full-stack-arxiv
 full stack web app written in ReactJS and Django
 
 ## License
 MIT
            
 ## architecture
-![architecture](docs/architecture.jpg)
+![architecture](docs/archi.jpeg)
 
 ## example 
-![workflow](docs/arxiv-1.jpg)
+![](docs/webapp.gif)
