@@ -2,7 +2,7 @@
 full stack web app written in ReactJS and Django
 
 ## License
-MIT
+GNU
            
 ## architecture
 ![architecture](docs/archi.jpeg)
