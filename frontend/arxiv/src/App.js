@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import PaperCard from './components/ResearchPaperCard';
 
 const apiUrl = "http://127.0.0.1:8000/api/";
 
@@ -24,19 +26,16 @@ function App() {
   console.log(apiData);
   console.log(apiData[0])
   return (
-    <div className="App">
+    <div>
       <h1>Latest Papers</h1>
       {apiData.slice(0, visible).map((paper) => (
-          <Grid item key={paper.title} xs={12} md={4}>
-              <h2>{paper.title}</h2>
-              <p>{paper.abstract}</p>
-
-          </Grid>
-        
+        <Grid key={paper.title}>
+          <PaperCard title={paper.title} abstract={paper.abstract}/>
+        </Grid>
       ))}
+
       <button onClick={loadMorePapers}>Load More</button>
-    
-    </div>
+      </div>
         
   )
       }
