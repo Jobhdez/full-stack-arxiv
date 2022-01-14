@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
 import PaperCard from './components/ResearchPaperCard';
 
 const apiUrl = "http://127.0.0.1:8000/api/";

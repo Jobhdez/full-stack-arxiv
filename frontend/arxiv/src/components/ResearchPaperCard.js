@@ -4,8 +4,10 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
+
 const useStyles = makeStyles({
-  root: {
+  
+  headingColor: {
     color: 'blue'
   },
 });
@@ -15,9 +17,9 @@ const ResearchPaperCard = ({title, abstract}) => {
 
     return (
       <div>
-      <Card sx={{display: 'flex'}}>
+      <Card sx={{display: 'flex', width: 800, p: 5, m: 15}}>
         <CardContent>
-          <Typography sx={{ fontSize: 14 }} className={colorClass.root} component="div">
+          <Typography sx={{ fontSize: 14 }} className={colorClass.headingColor} component="div">
             {title}
           </Typography>
           
