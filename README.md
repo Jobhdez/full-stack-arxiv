@@ -16,4 +16,4 @@ GNU
 ![architecture](docs/archi.jpeg)
 
 ## example 
-![](docs/web6.gif)
+![](docs/web7.gif)
