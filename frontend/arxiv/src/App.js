@@ -26,14 +26,17 @@ function App() {
   console.log(apiData[0])
   return (
     <div>
+      <div style={{display:'flex', justifyContent:'center'}}>
       <h1>Latest Papers</h1>
+      </div>
       {apiData.slice(0, visible).map((paper) => (
         <Grid key={paper.title}>
           <PaperCard title={paper.title} abstract={paper.abstract}/>
         </Grid>
       ))}
-
+      <div style={{display:'flex', justifyContent: 'center'}}>
       <button onClick={loadMorePapers}>Load More</button>
+      </div>
       </div>
         
   )

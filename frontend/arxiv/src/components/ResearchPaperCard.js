@@ -16,8 +16,8 @@ const ResearchPaperCard = ({title, abstract}) => {
   const colorClass = useStyles();
 
     return (
-      <div>
-      <Card sx={{display: 'flex', width: 800, p: 5, m: 15}}>
+      <div style={{display: 'flex', justifyContent:'center'}}>
+      <Card sx={{display: 'flex', width: 1000, p:1, m:1}}>
         <CardContent>
           <Typography sx={{ fontSize: 14 }} className={colorClass.headingColor} component="div">
             {title}
