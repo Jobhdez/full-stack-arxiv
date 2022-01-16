@@ -1,13 +1,21 @@
 # full-stack-arxiv
-full stack web app written in ReactJS and Django
+I built a full stack web app for learning purposes.
 
 ## About
-The backend uses an external api to seed the database. Then there's 
-the Rest API that acceses the api data. The frontend fetches the backend's api url 
-and renders the data.
+
+- I used an external API to seed the database; and
+- I built a REST API to access the data from the front-end; and
+- I built the front-end with React which renders the Data;
+
 
 The data are research papers; I manipulate the **title** and the **abstract** of 
 the research paper.
+
+# Installation
+- `clone` this repo
+- `cd` into the repo folder
+- In on Terminal run `python3 manage runserver` from the `backend` folder
+- In a separate terminal run `npm start` from the `frontend/arxiv` folder
 
 ## License
 GNU
