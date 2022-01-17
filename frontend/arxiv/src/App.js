@@ -1,47 +1,23 @@
-import React, { useState, useEffect } from "react";
-import Grid from '@mui/material/Grid';
-import PaperCard from './components/ResearchPaperCard';
-
-const apiUrl = "http://127.0.0.1:8000/api/";
+import React from 'react';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Search from './pages/SearchedPapers';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/Home';
 
 function App() {
-  const [apiData, setApiData] = useState([])
-  const [visible, setVisible] = useState(3);
-
-  const loadMorePapers = () => {
-    setVisible((prevValue) => prevValue + 3);
-  }
-  useEffect(() => {
-    getBioArxivWithFetch();
-  },[]);
-
-  const getBioArxivWithFetch = async () => {
-    const response = await fetch(apiUrl);
-    const jsonData = await response.json();
-    console.log(jsonData);
-    setApiData(jsonData);
-
-  };
-  console.log(apiData);
-  console.log(apiData[0])
   return (
-    <div>
-      <div style={{display:'flex', justifyContent:'center'}}>
-      <h1>Latest Papers</h1>
-      </div>
-      {apiData.slice(0, visible).map((paper) => (
-        <Grid key={paper.title}>
-          <PaperCard title={paper.title} abstract={paper.abstract}/>
-        </Grid>
-      ))}
-      <div style={{display:'flex', justifyContent: 'center'}}>
-      <button onClick={loadMorePapers}>Load More</button>
-      </div>
-      </div>
-        
-  )
-      }
-      
+    <Router>
+      <Header/>
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+        <Route path='/SearchedPapers' element={<Search/>}/>
+
+      </Routes>
+      <Footer/>
+    </Router>
+  );
+}
 
 
 export default App;
