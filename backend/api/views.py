@@ -1,6 +1,7 @@
 from rest_framework import generics
 from bioarxiv.models import Paper
 from .serializers import PaperSerializer
+from rest_framework import filters
 
 class PaperList(generics.ListCreateAPIView):
     queryset = Paper.objects.all()
