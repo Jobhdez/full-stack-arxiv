@@ -16,6 +16,7 @@ the research paper.
 - `cd` into the repo folder
 - In on Terminal run `python3 manage runserver` from the `backend` folder
 - In a separate terminal run `npm start` from the `frontend/arxiv` folder
+- Added a page where the user can search for research papers by modifying the api -- created an end point for searched papers
 
 ## License
 GNU
