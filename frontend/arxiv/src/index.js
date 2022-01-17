@@ -5,6 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import App from './App';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Search from './pages/SearchedPapers';
 
 const routing = (
 	<Router>
@@ -12,6 +13,7 @@ const routing = (
 			<Header />
 			<Routes>
 				<Route exact path="/" element={<App />} />
+				<Route path='/SearchedPapers' element={<Search/>}/>
 			</Routes>
 			<Footer />
 		</React.StrictMode>
