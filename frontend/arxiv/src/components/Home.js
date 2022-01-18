@@ -7,6 +7,9 @@ const apiUrl = "http://127.0.0.1:8000/api/";
 function Home() {
   const [apiData, setApiData] = useState([])
   const [visible, setVisible] = useState(3);
+  const [likes, setLikes] = useState(0);
+
+
 
   const loadMorePapers = () => {
     setVisible((prevValue) => prevValue + 3);
@@ -22,8 +25,11 @@ function Home() {
     setApiData(jsonData);
 
   };
-  console.log(apiData);
-  console.log(apiData[0])
+  const incrementLikes = () => {
+    const addToLikes = likes + 1;
+    setLikes(addToLikes)
+    }
+
   return (
     <div>
       <div style={{display:'flex', justifyContent:'center'}}>
@@ -31,6 +37,7 @@ function Home() {
       </div>
       {apiData.slice(0, visible).map((paper) => (
         <Grid key={paper.title}>
+          <button onClick={incrementLikes}>Likes: {likes}</button>
           <PaperCard title={paper.title} abstract={paper.abstract}/>
         </Grid>
       ))}
