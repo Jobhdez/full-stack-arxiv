@@ -25,5 +25,5 @@ the research paper.
 # Installation
 - `clone` this repo
 - `cd` into the repo folder
-- In on Terminal run `python3 manage.Python runserver` from the `backend` folder
+- In on Terminal run `python3 manage.py runserver` from the `backend` folder
 - In a separate terminal run `npm start` from the `frontend/arxiv` folder
