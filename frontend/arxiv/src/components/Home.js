@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import PaperCard from './ResearchPaperCard';
 
@@ -42,7 +43,7 @@ function Home() {
         </Grid>
       ))}
       <div style={{display:'flex', justifyContent: 'center'}}>
-      <button onClick={loadMorePapers}>Load More</button>
+      <Button variant="contained" onClick={loadMorePapers}>Load More</Button>
       </div>
       </div>
         
