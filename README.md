@@ -1,13 +1,13 @@
 # full-stack-arxiv
 I built a full stack web app for learning purposes.
 
-## About
+## Features
 
 - I used an external API to seed the database; and
 - I built a REST API to access the data from the front-end; and
 - I built the front-end with React which renders the Data; and
 - Added a page where the user can search for research papers by modifying the api -- created an end point for searched papers
-
+- users can now upvote each paper in the home page
 ## License
 GNU
            
