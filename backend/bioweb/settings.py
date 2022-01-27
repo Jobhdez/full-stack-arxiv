@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-@&qx7y@*_x%#-d)ccvx=4)gm$acc0^m6u9)bpe^)j56gk@naxi'
-
+DJANGO_CPROFILE_MIDDLEWARE_REQUIRE_STAFF = False
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -53,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_cprofile_middleware.middleware.ProfilerMiddleware',
 ]
 
 ROOT_URLCONF = 'bioweb.urls'
